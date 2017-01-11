@@ -4,15 +4,15 @@ import tensorflow as tf
 
 from constants import IMAGE_PIXELS, OUTPUT
 
-def inference(images, hidden1_units, hidden2_units):
+def inference(x):
 	with tf.name_scope('layer1'):
 		# Placeholder Model
 		with tf.name_scope('weights'):
-			W = tf.Variable(tf.zeros([96 * 96, 30]))
+			W = tf.Variable(tf.zeros([IMAGE_PIXELS, OUTPUT]))
 		with tf.name_scope('biases'):
-			b = tf.Variable(tf.zeros([30]))
+			b = tf.Variable(tf.zeros([OUTPUT]))
 		with tf.name_scope('Wx_plus_b'):
-			y = tf.matmul(images, W) + b
+			y = tf.matmul(x, W) + b
 		return y
 
 def loss(y, y_):
