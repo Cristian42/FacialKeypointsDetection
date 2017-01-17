@@ -22,7 +22,7 @@ def make_prediction(MODEL_ARCHITECTURE, MODEL_WEIGHTS, PATH_FACES, N_PLOT):
 	model = tflearn.DNN(tflearn.regression(m.network(), optimizer=m.optimizer(), loss='mean_square'))
 
 	# Load neural net weights
-	model.load(MODEL_WEIGHTS)
+	model.load(MODEL_WEIGHTS, weights_only=True)
 
 	# Load images
 	X, y = image_preloader(PATH_FACES, image_shape=(96, 96), mode='folder', normalize=True)
@@ -42,8 +42,8 @@ def make_prediction(MODEL_ARCHITECTURE, MODEL_WEIGHTS, PATH_FACES, N_PLOT):
 if __name__ == "__main__":
 
 	## CHANGE VARIABLES HERE ##
-	LOAD_ARCHITECTURE = "v1_single_layer" # Model architecture
-	LOAD_WEIGHTS = "models/v1/model.tflearn" # Model weights
+	LOAD_ARCHITECTURE = "v2_convnet" # Model architecture
+	LOAD_WEIGHTS = "models/v3-convnet-ep-400-adam/model.tflearn" # Model weights
 	PATH_FACES = "faces/" # Path to faces subdirs
 	N_PLOT = -1 # Plot the first N_PLOT images (-1 to plot all of them)
 
