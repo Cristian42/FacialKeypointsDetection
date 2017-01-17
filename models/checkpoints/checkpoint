@@ -1,0 +1,4 @@
+model_checkpoint_path: "/Users/Cristian/codebase/tensorflow/FacialKeypointsDetection/models/checkpoints/model.tfl.ckpt-3000"
+all_model_checkpoint_paths: "/Users/Cristian/codebase/tensorflow/FacialKeypointsDetection/models/checkpoints/model.tfl.ckpt-2600"
+all_model_checkpoint_paths: "/Users/Cristian/codebase/tensorflow/FacialKeypointsDetection/models/checkpoints/model.tfl.ckpt-2800"
+all_model_checkpoint_paths: "/Users/Cristian/codebase/tensorflow/FacialKeypointsDetection/models/checkpoints/model.tfl.ckpt-3000"

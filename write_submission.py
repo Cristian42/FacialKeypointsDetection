@@ -1,4 +1,4 @@
-# Takes a (_, 30) prediction array and writes a .csv submission file with the correct format
+# Takes a (_, 30) prediction array and writes a .csv submission file in the Kaggle format
 
 import os
 from datetime import datetime
