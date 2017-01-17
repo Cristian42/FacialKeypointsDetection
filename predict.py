@@ -1,4 +1,4 @@
-# Predict the facial keypoints on custom faces located in PATH_FACES/<subdir>/<more_info>.png
+# Predict the facial keypoints on custom faces located in PATH_FACES/<subdir>/<more_info>.jpg
 # using a net architecture located in MODEL_ARCHITECTURE .py file 
 # and initialized with weights located in MODEL_WEIGHTS TFLearn file
 
